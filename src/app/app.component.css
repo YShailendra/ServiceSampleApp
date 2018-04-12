@@ -1,0 +1,21 @@
+body
+{
+    overflow: hidden;
+}
+.nav-bar-div
+{
+    height: 35px;
+    padding: 5px;
+    background-color: black;
+}
+.nav-bar-div span
+{
+    font-weight: bold;
+    padding: 0px 20px;
+    color: white;
+    cursor: pointer;
+}
+.active-cls
+{
+    color: lightblue !important;
+}

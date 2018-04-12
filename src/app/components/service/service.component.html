@@ -1,0 +1,68 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-3">Serial</div>
+    <div class="col-sm-3">Company Name</div>
+    <div class="col-sm-3">Service Name</div>
+    <div class="col-sm-3">Address</div>
+  </div>
+
+</div> -->
+
+<div class="container">
+    <h2  *ngIf="isServiceDetail">Service Details  Table</h2>
+    <h2  *ngIf="!isServiceDetail">Service  Table</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr style="color:white;background-color:black;">
+          <th><label *ngIf="isServiceDetail" class="chk-container" style="margin-top:-22px">
+              <input type="checkbox" [(ngModel)]="allChked" (change)="Select('all')">
+              <span class="checkmark"></span>
+            </label></th>
+          <th >Serial <b>#</b> <i (click)="sortField('seq')" class="fa fa-fw fa-sort"></i></th>
+          <th>Company Name<i  (click)="sortField('CompanyName')" class="fa fa-fw fa-sort"></i></th>
+          <th >Service Name <i (click)="sortField('ServiceName')" class="fa fa-fw fa-sort"></i></th>
+          <th >Address <i (click)="sortField('Address')" class="fa fa-fw fa-sort"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of serviceData|customsort:currenSort?.field:currenSort?.sort:field?.type;let i=index;">
+          <td><label *ngIf="isServiceDetail" class="chk-container">
+              <input type="checkbox" [(ngModel)]="item.chk"  (change)="Select(item)">
+              <span class="checkmark"></span>
+            </label></td>
+          <td>{{item.seq}}</td>
+          <td>{{item.CompanyName}}</td>
+          <td>{{item.ServiceName}}</td>
+          <td>{{item.Address}}</td>
+        </tr>
+        <tr *ngIf="isServiceDetail">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button type="button" (click)="isClose=!isClose" class="btn btn-default btn-xs">Ok</button></td>
+        </tr>
+        <!-- <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+  
+
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal" [hidden]="isClose">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="isClose=!isClose" >&times;</span>
+    <div *ngIf="SelectedItems.length!=0">
+        {{SelectedItems|json}}
+    </div>
+  </div>
+
+</div>

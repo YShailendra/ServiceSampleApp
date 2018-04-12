@@ -1,0 +1,12 @@
+[ 
+{ "Id":"A1", "CompanyName" : "AMAZON ",  "ServiceName" :"DB Management", "Address" : "ABC"},
+{ "Id":"A1", "CompanyName" : "XEBIA",  "ServiceName" :"Website Hosting", "Address" : "DEF"},
+{ "Id":"A1", "CompanyName" : "CLOVITY ",  "ServiceName" :"ERP MANAGEMNT", "Address" : "GHI"},
+{ "Id":"A1", "CompanyName" : "WALMART ",  "ServiceName" :"Mobile App Dev", "Address" : "JKL"},
+{ "Id":"A1", "CompanyName" : "KOHL's",  "ServiceName" :" ELECTRONIC EQUIP ", "Address" : "MNO"},
+{ "Id":"A1", "CompanyName" : "SNAPDEAL ",  "ServiceName" :"E-COMMERCE", "Address" : "PQR"},
+{ "Id":"A1", "CompanyName" : "INFOSYS",  "ServiceName" :"SOFTWARE DEV", "Address" : "STU"},
+{ "Id":"A1", "CompanyName" : "ORBITPAD",  "ServiceName" :"BOOKSHOP", "Address" : "123"},
+{ "Id":"A1", "CompanyName" : "FLIPKART ",  "ServiceName" :"E-COMMERCE", "Address" : "QQQ"},
+{ "Id":"A1", "CompanyName" : "MYNTRA",  "ServiceName" :"CLOTHES SHOP", "Address" : "GHI"}
+]
